@@ -1,0 +1,299 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI HealthCare Clinic</title>
+    <link rel="stylesheet" href="med.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<header>
+    <div class="logo">
+    <span class="logo-icon">✚</span>
+    <span>MediAura</span>
+</div>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#doctors">Doctors</a>
+        <a href="#appointment">Appointment</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <button class="nav-btn" onclick="openChat()">
+        AI Doctor
+    </button>
+</header>
+
+<!-- Hero Section -->
+<section class="hero" id="home">
+    <div class="hero-content">
+
+        <span class="tag">YOUR HEALTH, OUR PRIORITY</span>
+
+        <h1>
+            Better Healthcare <br>
+            For A <span>Better Life</span>
+        </h1>
+
+        <p>
+            Get health information, connect with healthcare
+            professionals and book medical consultations online.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="#appointment" class="primary-btn">
+                Book Appointment
+            </a>
+
+            <button class="secondary-btn" onclick="openChat()">
+                🤖 Chat With AI
+            </button>
+
+        </div>
+    </div>
+
+    <div class="hero-image">
+        <div class="doctor-card">
+            <div class="doctor-icon">👨‍⚕️</div>
+            <h2>Online Healthcare</h2>
+            <p>Healthcare support from anywhere.</p>
+            <span>● Available Online</span>
+        </div>
+    </div>
+</section>
+
+<!-- Services -->
+<section class="services" id="services">
+
+    <h2>Our Medical Services</h2>
+
+    <p class="section-desc">
+        Healthcare information and consultation across multiple specialties.
+    </p>
+
+    <div class="service-grid">
+
+        <!-- Heart Care -->
+        <a href="heart.html" class="service-card">
+            <div>❤️</div>
+            <h3>Heart Care</h3>
+            <p>Cardiology consultations and heart health guidance.</p>
+            <span class="explore">Explore Heart Care →</span>
+        </a>
+
+        <!-- Neurology -->
+        <a href="neuro.html" class="service-card">
+            <div>🧠</div>
+            <h3>Neurology</h3>
+            <p>Brain and nervous system healthcare consultations.</p>
+            <span class="explore">Explore Neurology →</span>
+        </a>
+
+        <!-- Dental Care -->
+        <a href="dental.html" class="service-card">
+    <div>🦷</div>
+    <h3>Dental Care</h3>
+    <p>Dental health and oral hygiene consultations.</p>
+    <span class="explore">Explore Dental Care →</span>
+</a>
+
+        <!-- Eye Care -->
+        <a href="eye.html" class="service-card">
+    <div>👁️</div>
+    <h3>Eye Care</h3>
+    <p>Eye health and vision care guidance.</p>
+    <span class="explore">Explore Eye Care →</span>
+</a>
+
+        <!-- General Medicine -->
+        <a href="gen.html" class="service-card">
+    <div>🩺</div>
+    <h3>General Medicine</h3>
+    <p>Complete medical care and consultation.</p>
+    <span>Explore General Medicine →</span>
+</a>
+        <!-- Diabetes Care -->
+        <a href="dia.html" class="service-card">
+    <div>🩸</div>
+    <h3>Diabetes Care</h3>
+    <p>Diabetes monitoring and management support.</p>
+    <span>Explore Diabetes Care →</span>
+</a>
+        <!-- Child Care -->
+       <a href="child.html" class="service-card">
+    <div>🧸</div>
+    <h3>Child Care</h3>
+    <p>Complete pediatric care for babies and children.</p>
+    <span>Explore Child Care →</span>
+</a>
+        <!-- Skin Care -->
+        <a href="skin.html" class="service-card">
+            <div>🩺 </div>
+            <h3>Skin Care </h3>
+            <p>Dermatology and skin health consultations.</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- Doctors -->
+<section class="doctors" id="doctors">
+
+    <h2>Our Healthcare Team</h2>
+
+    <p class="section-desc">
+        Connect with qualified healthcare professionals.
+    </p>
+
+    <div class="doctor-grid">
+
+        <div class="doctor-box">
+            <div class="profile">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRg-99LqJfrx_V8rWynv-TPN__LS6fXBdfWBZeBu9YrA&s=10" height="100px">
+            </div>
+            <p><b>Subas Datta</b></p>
+            <h3>General Physician</h3>
+            <p>General Medicine</p>
+            <span>Online Consultation</span>
+        </div>
+
+        <div class="doctor-box">
+            <div class="profile">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjec2Y2i0R1uz8DblG2JHqGZjofDFwH23tZsUQ7jHINgK9gJkRvR7ZCl2j&s=10" height="100px">
+            </div>
+            <p><b>Urmila Modi </b></p>
+            <h3>Heart Specialist</h3>
+            <p>Cardiology</p>
+            <span>Online Consultation</span>
+        </div>
+
+        <div class="doctor-box">
+            <div class="profile">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjcyIov5Y7mlOBmN7gTogmxqoh8ks64X8jV5tB4yrldDtTT2J_4aF2zKCm&s=10" height="100px">
+            </div>
+            <p><b>Divya Phatak</b></p>
+            <h3>Child Specialist</h3>
+            <p>Pediatrics</p>
+            <span>Online Consultation</span>
+        </div>
+
+    </div>
+</section>
+
+<!-- Appointment -->
+<section class="appointment" id="appointment">
+
+    <h2>Book Your Appointment</h2>
+
+    <p>Fill in your details to request a consultation.</p>
+
+    <form id="appointmentForm">
+
+        <input type="text" id="patientName"
+            placeholder="Your Full Name" required>
+
+        <input type="tel" id="phone"
+            placeholder="Mobile Number" required>
+
+        <select id="department" required>
+            <option value="">Select Department</option>
+            <option>General Medicine</option>
+            <option>Cardiology</option>
+            <option>Neurology</option>
+            <option>Dental Care</option>
+            <option>Child Care</option>
+            <option>Skin Care</option>
+        </select>
+
+        <input type="date" id="date" required>
+
+        <textarea id="problem"
+            placeholder="Describe your health concern"
+            required></textarea>
+
+        <button type="submit">Request Appointment</button>
+
+    </form>
+
+    <p id="appointmentMessage"></p>
+
+</section>
+
+<!-- AI Chatbot -->
+<div class="chat-button" onclick="toggleChat()">
+    🤖
+</div>
+
+<div class="chat-box" id="chatBox">
+
+    <div class="chat-header">
+        <div>
+            <strong>AI Health Assistant</strong>
+            <small>Health Information Support</small>
+        </div>
+
+        <button onclick="toggleMenu()">✕</button>
+    </div>
+
+    <div class="chat-messages" id="chatMessages">
+
+        <div class="bot-message">
+            Hello! 👋 Welcome to AI HealthCare.
+            <br><br>
+            Tell me what health information you need.
+            I can help with general health guidance.
+        </div>
+
+    <div class="chat-input">
+
+        <input type="text" id="userInput"
+            placeholder="Ask your health question..."
+            onkeydown="handleEnter(event)">
+
+        <button onclick="sendMessage()">➤</button>
+
+    </div>
+
+    <div class="chat-note">
+        AI responses are informational, not medical diagnoses.
+    </div>
+
+</div>
+
+<!-- Contact -->
+<section class="contact" id="contact">
+
+    <h2>Contact Us</h2>
+
+    <a href="https://wa.me/91XXXXXXXXXX"
+       class="whatsapp-btn"
+       target="_blank">
+       💬 WhatsApp Us
+    </a>
+
+    <p>Email: support@aihealthcare.com</p>
+    <p>Phone: +91 8g858f8358</p>
+    <p>Online Healthcare Support</p>
+
+</section>
+
+<!-- Footer -->
+<footer>
+
+    <p>© 2026 AI HealthCare Clinic. All Rights Reserved.</p>
+
+    <p>
+        For medical emergencies, contact your local emergency service.
+    </p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

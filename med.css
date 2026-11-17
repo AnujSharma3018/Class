@@ -1,0 +1,615 @@
+
+/* ==============================
+   LUXURY HEALTHCARE THEME
+   Green + White + Gold
+============================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #f7fbf8;
+    color: #173d32;
+}
+
+/* Navbar */
+
+header {
+    background: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 7%;
+    box-shadow: 0 4px 20px #123d3010;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 1px solid #e5eee8;
+}
+
+.logo {
+    font-size: 23px;
+    font-weight: bold;
+    color: #087653;
+}
+
+nav {
+    display: flex;
+    gap: 28px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #294b3f;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #0b9b6a;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+}
+
+.nav-btn,
+.primary-btn {
+    background: linear-gradient(135deg, #087653, #10a879);
+    color: white;
+    padding: 14px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 5px 15px #08765330;
+    transition: 0.3s;
+}
+
+.nav-btn:hover,
+.primary-btn:hover {
+    background: #064e3b;
+    transform: translateY(-3px);
+}
+
+/* Hero Section */
+
+.hero {
+    min-height: 570px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 75px 10%;
+    gap: 40px;
+    background: linear-gradient(120deg, #e5f5ec, #ffffff);
+}
+
+.hero-content {
+    max-width: 550px;
+}
+
+.tag {
+    color: #0b9365;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 12px;
+}
+
+.hero h1 {
+    font-size: 52px;
+    margin: 20px 0;
+    line-height: 1.2;
+    color: #153e30;
+}
+
+.hero h1 span {
+    color: #0a9869;
+}
+
+.hero p {
+    line-height: 1.8;
+    color: #687d72;
+    margin-bottom: 25px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.secondary-btn {
+    padding: 13px 22px;
+    border: 2px solid #087653;
+    color: #087653;
+    background: white;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.secondary-btn:hover {
+    background: #087653;
+    color: white;
+}
+
+/* Hero Doctor Card */
+
+.hero-image {
+    width: 350px;
+    min-height: 320px;
+    display: grid;
+    place-items: center;
+    background: linear-gradient(145deg, #c9ead7, #eaf7ef);
+    border-radius: 50px;
+}
+
+.doctor-card {
+    background: white;
+    padding: 35px;
+    border-radius: 22px;
+    text-align: center;
+    box-shadow: 0 15px 40px #164d3520;
+    border: 1px solid #e0eee5;
+}
+
+.doctor-icon {
+    font-size: 90px;
+}
+
+.doctor-card h2 {
+    margin: 15px 0;
+    color: #14543d;
+}
+
+.doctor-card p {
+    color: #718378;
+    margin-bottom: 15px;
+}
+
+.doctor-card span {
+    color: #0b9b69;
+    font-weight: bold;
+}
+
+/* Common Sections */
+
+section:not(.hero) {
+    padding: 80px 8%;
+}
+
+section h2 {
+    text-align: center;
+    font-size: 33px;
+    margin-bottom: 15px;
+    color: #174a37;
+}
+
+.section-desc {
+    text-align: center;
+    color: #718378;
+    margin-bottom: 40px;
+}
+
+/* Services */
+
+.service-grid,
+.doctor-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+}
+
+.service-card {
+    background: #ffffff;
+    padding: 30px 20px;
+    border-radius: 16px;
+    text-align: center;
+    transition: 0.35s;
+    box-shadow: 0 5px 20px #164d3509;
+    border: 1px solid #e3eee6;
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.service-card:hover {
+    transform: translateY(-9px);
+    box-shadow: 0 15px 30px #08765320;
+    border-color: #0b9b69;
+}
+
+.service-card div {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.service-card h3 {
+    margin-bottom: 12px;
+    color: #15523c;
+}
+
+.service-card p {
+    color: #718378;
+    line-height: 1.6;
+    font-size: 14px;
+}
+
+.explore {
+    display: inline-block;
+    margin-top: 15px;
+    color: #0a9666;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+/* Doctors */
+
+.doctors {
+    background: #eaf5ed;
+}
+
+.doctor-grid {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.doctor-box {
+    background: white;
+    padding: 32px;
+    border-radius: 18px;
+    text-align: center;
+    border: 1px solid #dfede3;
+    box-shadow: 0 8px 25px #164d350b;
+    transition: 0.3s;
+}
+
+.doctor-box:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 15px 30px #08765320;
+}
+
+.profile {
+    font-size: 65px;
+    margin-bottom: 15px;
+}
+
+.profile img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #c8e8d4;
+}
+
+.doctor-box p {
+    margin: 10px;
+    color: #718378;
+}
+
+.doctor-box h3 {
+    color: #15523c;
+}
+
+.doctor-box span {
+    display: inline-block;
+    margin-top: 10px;
+    color: #087653;
+    background: #e6f6ed;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 13px;
+}
+
+/* Appointment */
+
+.appointment {
+    text-align: center;
+    background: #ffffff;
+}
+
+.appointment form {
+    max-width: 550px;
+    margin: 35px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    background: #f7fbf8;
+    padding: 30px;
+    border-radius: 18px;
+    box-shadow: 0 10px 35px #164d3510;
+    border: 1px solid #e3eee6;
+}
+
+.appointment input,
+.appointment select,
+.appointment textarea {
+    padding: 16px;
+    border: 1px solid #d7e7dc;
+    border-radius: 9px;
+    outline: none;
+    width: 100%;
+    font-size: 15px;
+    background: white;
+    color: #244c3c;
+    transition: 0.3s;
+}
+
+.appointment input:focus,
+.appointment select:focus,
+.appointment textarea:focus {
+    border-color: #0b9b69;
+    box-shadow: 0 0 0 3px #0b9b6915;
+}
+
+.appointment textarea {
+    min-height: 110px;
+    resize: vertical;
+}
+
+.appointment form button {
+    background: linear-gradient(135deg, #087653, #10a879);
+    color: white;
+    padding: 16px;
+    border-radius: 9px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.appointment form button:hover {
+    background: #064e3b;
+    transform: translateY(-2px);
+}
+
+#appointmentMessage {
+    color: #087653;
+}
+
+/* Chatbot */
+
+.chat-button {
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    width: 65px;
+    height: 65px;
+    background: linear-gradient(135deg, #087653, #10a879);
+    color: white;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    font-size: 30px;
+    cursor: pointer;
+    box-shadow: 0 5px 20px #08765350;
+    z-index: 200;
+}
+
+.chat-box {
+    position: fixed;
+    bottom: 105px;
+    right: 25px;
+    width: 350px;
+    height: 460px;
+    background: white;
+    border-radius: 18px;
+    box-shadow: 0 10px 40px #00000025;
+    display: none;
+    flex-direction: column;
+    overflow: hidden;
+    z-index: 200;
+    border: 1px solid #e0eee5;
+}
+
+.chat-box.active {
+    display: flex;
+}
+
+.chat-header {
+    background: linear-gradient(135deg, #087653, #10a879);
+    color: white;
+    padding: 17px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.chat-header small {
+    display: block;
+    margin-top: 5px;
+}
+
+.chat-header button {
+    background: transparent;
+    color: white;
+    font-size: 20px;
+}
+
+.chat-messages {
+    flex: 1;
+    padding: 15px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.bot-message,
+.user-message {
+    padding: 12px;
+    border-radius: 12px;
+    max-width: 85%;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.bot-message {
+    background: #e9f6ed;
+    color: #234c39;
+    align-self: flex-start;
+}
+
+.user-message {
+    background: #087653;
+    color: white;
+    align-self: flex-end;
+}
+
+.chat-input {
+    display: flex;
+    padding: 12px;
+    border-top: 1px solid #e4eee7;
+    gap: 8px;
+}
+
+.chat-input input {
+    flex: 1;
+    min-width: 0;
+    padding: 12px;
+    border: 1px solid #d7e7dc;
+    border-radius: 8px;
+}
+
+.chat-input button {
+    background: #087653;
+    color: white;
+    padding: 12px;
+    border-radius: 8px;
+}
+
+.chat-note {
+    text-align: center;
+    font-size: 10px;
+    padding: 7px;
+    color: #718378;
+}
+
+/* Contact */
+
+.contact {
+    text-align: center;
+    background: #eaf5ed;
+}
+
+.contact p {
+    margin: 12px;
+    color: #547061;
+}
+
+/* WhatsApp */
+
+.whatsapp-btn {
+    display: inline-block;
+    background: #087f53;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 15px;
+    box-shadow: 0 5px 15px #08765330;
+    transition: 0.3s;
+}
+
+.whatsapp-btn:hover {
+    background: #075d3e;
+    transform: translateY(-3px);
+}
+
+/* Footer */
+
+footer {
+    background: #123d2d;
+    color: #ffffff;
+    padding: 28px;
+    text-align: center;
+    line-height: 2;
+}
+
+/* Mobile Responsive */
+
+@media(max-width: 900px) {
+
+    nav {
+        display: none;
+    }
+
+    .service-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(max-width: 600px) {
+
+    header {
+        padding: 18px 4%;
+    }
+
+    .logo {
+        font-size: 18px;
+    }
+
+    .nav-btn {
+        padding: 10px;
+        font-size: 12px;
+    }
+
+    .hero {
+        flex-direction: column;
+        padding: 55px 6%;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .hero-image {
+        width: 100%;
+    }
+
+    .service-grid,
+    .doctor-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .chat-box {
+        right: 10px;
+        width: calc(100% - 20px);
+        bottom: 95px;
+    }
+
+    section:not(.hero) {
+        padding: 55px 6%;
+    }
+
+    .appointment form {
+        padding: 20px;
+    }
+}
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 25px;
+    font-weight: bold;
+    color: #087653;
+}
+
+.logo-icon {
+    background: #087653;
+    color: white;
+    width: 42px;
+    height: 42px;
+    display: grid;
+    place-items: center;
+    border-radius: 12px;
+    font-size: 28px;
+}

@@ -1,0 +1,363 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MediAura | Dental Care</title>
+
+    <link rel="stylesheet" href="dental.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+    <a href="index.html" class="logo">
+        ✚ <span>Medi<span class="green">Aura</span></span>
+    </a>
+
+    <nav id="navMenu">
+        <a href="index.html">Home</a>
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#appointment">Appointment</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <a href="#appointment" class="nav-btn">Book Appointment</a>
+
+    <button class="menu-btn" onclick="toggleMenu()">☰</button>
+</header>
+
+<!-- HERO SECTION -->
+<section class="hero">
+
+    <div class="hero-content">
+
+        <span class="tag">YOUR SMILE, OUR PRIORITY</span>
+
+        <h1>
+            Healthy Teeth.<br>
+            <span>Beautiful Smile.</span>
+        </h1>
+
+        <p>
+            Experience modern dental care with professional
+            guidance, oral health consultations and
+            personalized dental support.
+        </p>
+
+        <div class="hero-buttons">
+            <a href="#appointment" class="primary-btn">
+                Book Dental Appointment →
+            </a>
+
+            <button class="secondary-btn" onclick="openChat()">
+                🤖 AI Dental Assistant
+            </button>
+        </div>
+
+        <div class="hero-stats">
+            <div>
+                <strong>6+</strong>
+                <small>Dental Services</small>
+            </div>
+
+            <div>
+                <strong>24/7</strong>
+                <small>Online Support</small>
+            </div>
+
+            <div>
+                <strong>100%</strong>
+                <small>Smile Focused</small>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="hero-image">
+        <img src="https://images.unsplash.com/photo-1606811971618-4486d14f3f99?w=800"
+             alt="Dental Clinic">
+    </div>
+
+</section>
+
+<!-- SERVICES -->
+<section class="services section" id="services">
+
+    <div class="section-heading">
+        <span class="tag">OUR DENTAL SPECIALITIES</span>
+
+        <h2>Complete Dental <span>Care</span></h2>
+
+        <p>Professional dental services for a healthier smile.</p>
+    </div>
+
+    <div class="service-grid">
+
+        <div class="service-card">
+            <div class="icon">🦷</div>
+            <h3>Teeth Cleaning</h3>
+            <p>Professional cleaning and oral hygiene guidance.</p>
+            <a href="#appointment">Book Service →</a>
+        </div>
+
+        <div class="service-card">
+            <div class="icon">✨</div>
+            <h3>Teeth Whitening</h3>
+            <p>Dental whitening consultation for a brighter smile.</p>
+            <a href="#appointment">Book Service →</a>
+        </div>
+
+        <div class="service-card">
+            <div class="icon">😁</div>
+            <h3>Braces Treatment</h3>
+            <p>Orthodontic consultations for teeth alignment.</p>
+            <a href="#appointment">Book Service →</a>
+        </div>
+
+        <div class="service-card">
+            <div class="icon">🩺</div>
+            <h3>Root Canal</h3>
+            <p>Endodontic treatment consultation and guidance.</p>
+            <a href="#appointment">Book Service →</a>
+        </div>
+
+        <div class="service-card">
+            <div class="icon">🦷</div>
+            <h3>Dental Implants</h3>
+            <p>Consultation about tooth replacement options.</p>
+            <a href="#appointment">Book Service →</a>
+        </div>
+
+        <div class="service-card">
+            <div class="icon">👶</div>
+            <h3>Kids Dentistry</h3>
+            <p>Dental care guidance for children's oral health.</p>
+            <a href="#appointment">Book Service →</a>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ABOUT -->
+<section class="about section" id="about">
+
+    <div class="about-image">
+        <img src="https://images.unsplash.com/photo-1609840114035-3c981b782dfe?w=800"
+             alt="Dental Doctor">
+    </div>
+
+    <div class="about-content">
+
+        <span class="tag">ABOUT DENTAL CARE</span>
+
+        <h2>Making Every Smile <span>Beautiful.</span></h2>
+
+        <p>
+            MediAura provides accessible dental healthcare
+            information and consultation support to help
+            patients understand their oral health needs.
+        </p>
+
+        <div class="about-feature">
+            <span>✓</span>
+            Professional Dental Guidance
+        </div>
+
+        <div class="about-feature">
+            <span>✓</span>
+            Modern Treatment Information
+        </div>
+
+        <div class="about-feature">
+            <span>✓</span>
+            Convenient Appointment Requests
+        </div>
+
+        <a href="#appointment" class="primary-btn">
+            Consult Now →
+        </a>
+
+    </div>
+
+</section>
+
+<!-- TREATMENT PROCESS -->
+<section class="process section">
+
+    <div class="section-heading">
+        <span class="tag">SIMPLE PROCESS</span>
+        <h2>Your Dental Care <span>Journey</span></h2>
+    </div>
+
+    <div class="process-grid">
+
+        <div class="process-card">
+            <span>01</span>
+            <h3>Book Appointment</h3>
+            <p>Submit your dental consultation request.</p>
+        </div>
+
+        <div class="process-card">
+            <span>02</span>
+            <h3>Dental Consultation</h3>
+            <p>Discuss your concerns with a qualified dentist.</p>
+        </div>
+
+        <div class="process-card">
+            <span>03</span>
+            <h3>Treatment Planning</h3>
+            <p>Understand suitable treatment options.</p>
+        </div>
+
+        <div class="process-card">
+            <span>04</span>
+            <h3>Follow-up Care</h3>
+            <p>Follow your dentist's recommended care plan.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- APPOINTMENT -->
+<section class="appointment section" id="appointment">
+
+    <div class="appointment-info">
+
+        <span class="tag">BOOK YOUR VISIT</span>
+
+        <h2>Let's Take Care Of Your <span>Smile.</span></h2>
+
+        <p>
+            Request your dental appointment online.
+            Our clinic team can contact you for confirmation.
+        </p>
+
+        <div class="info-item">🦷 Dental Consultation</div>
+        <div class="info-item">📞 Easy Appointment Request</div>
+        <div class="info-item">💬 Patient Support</div>
+
+    </div>
+
+    <form id="dentalForm" class="appointment-form">
+
+        <h3>Dental Appointment</h3>
+
+        <label>Full Name</label>
+        <input type="text" id="name"
+               placeholder="Enter your name" required>
+
+        <label>Mobile Number</label>
+        <input type="tel" id="phone"
+               placeholder="10-digit mobile number"
+               pattern="[0-9]{10}" required>
+
+        <label>Select Dental Service</label>
+        <select id="service" required>
+            <option value="">Choose Service</option>
+            <option>Teeth Cleaning</option>
+            <option>Teeth Whitening</option>
+            <option>Braces Treatment</option>
+            <option>Root Canal</option>
+            <option>Dental Implants</option>
+            <option>Kids Dentistry</option>
+            <option>General Dental Consultation</option>
+        </select>
+
+        <label>Appointment Date</label>
+        <input type="date" id="date" required>
+
+        <label>Describe Your Concern</label>
+        <textarea id="concern"
+                  placeholder="Describe your dental problem..."
+                  required></textarea>
+
+        <button type="submit" class="primary-btn">
+            Request Appointment →
+        </button>
+
+        <p id="formMessage"></p>
+
+    </form>
+
+</section>
+
+<!-- AI DENTAL CHATBOT -->
+<button class="chat-button" onclick="toggleChat()">🤖</button>
+
+<div class="chat-box" id="chatBox">
+
+    <div class="chat-header">
+        <div>
+            <strong>🦷 MediAura Dental AI</strong>
+            <small>Dental Information Assistant</small>
+        </div>
+
+        <button onclick="toggleChat()">✕</button>
+    </div>
+
+    <div class="chat-messages" id="chatMessages">
+
+        <div class="bot-message">
+            Hello! 👋 Welcome to MediAura Dental Care.
+
+            <br><br>
+
+            Ask me about teeth cleaning, tooth pain,
+            braces, whitening and dental care.
+        </div>
+
+    </div>
+
+    <div class="chat-input">
+        <input type="text" id="userInput"
+               placeholder="Ask your dental question..."
+               onkeydown="handleEnter(event)">
+
+        <button onclick="sendMessage()">➤</button>
+    </div>
+
+    <div class="chat-note">
+        AI provides general information, not a diagnosis.
+    </div>
+
+</div>
+
+<!-- CONTACT -->
+<section class="contact section" id="contact">
+
+    <div class="section-heading">
+        <span class="tag">CONTACT US</span>
+        <h2>Let's Make You <span>Smile.</span></h2>
+        <p>Contact MediAura for dental consultation support.</p>
+    </div>
+
+    <a href="https://wa.me/91XXXXXXXXXX"
+       class="whatsapp-btn" target="_blank">
+       💬 WhatsApp Us
+    </a>
+
+    <p>Email: support@mediaura.com</p>
+
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <h2>✚ MediAura</h2>
+    <p>Health • Care • Better Tomorrow</p>
+    <p>© 2026 MediAura. All Rights Reserved.</p>
+    <small>For dental emergencies, contact a qualified dentist promptly.</small>
+</footer>
+
+<script src="dental.js"></script>
+
+</body>
+</html>

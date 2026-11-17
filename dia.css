@@ -1,0 +1,500 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    color: #193b3b;
+    background: #f7fbfa;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 7%;
+    background: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 3px 20px rgba(0,0,0,.05);
+}
+
+.logo {
+    font-family: 'Manrope', sans-serif;
+    font-size: 28px;
+    font-weight: 800;
+    text-decoration: none;
+    color: #153d3c;
+}
+
+.logo span { color: #14a58c; }
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #425b59;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+nav a:hover { color: #14a58c; }
+
+.nav-btn, .primary-btn {
+    background: #119d86;
+    color: white !important;
+    padding: 14px 23px;
+    border-radius: 8px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    font-weight: 700;
+    display: inline-block;
+}
+
+.nav-btn:hover, .primary-btn:hover { background: #087a6a; }
+
+.menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 26px;
+    cursor: pointer;
+}
+
+.hero {
+    padding: 75px 8%;
+    display: grid;
+    grid-template-columns: 1.05fr .95fr;
+    align-items: center;
+    gap: 55px;
+    background: linear-gradient(120deg,#edf9f6,#f8fbfa);
+}
+
+.tag, .section-heading span {
+    color: #119d86;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.hero h1 {
+    font-family: 'Manrope', sans-serif;
+    font-size: clamp(38px,5vw,62px);
+    line-height: 1.15;
+    margin: 20px 0;
+    color: #153b39;
+}
+
+.hero h1 span { color: #119d86; }
+
+.hero-content > p {
+    color: #718481;
+    line-height: 1.8;
+    max-width: 520px;
+    margin-bottom: 28px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.secondary-btn {
+    padding: 13px 22px;
+    border: 1px solid #119d86;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #119d86;
+    font-weight: 700;
+}
+
+.hero-image { position: relative; }
+
+.hero-image > img {
+    width: 100%;
+    height: 470px;
+    object-fit: cover;
+    border-radius: 25px;
+}
+
+.floating-card {
+    position: absolute;
+    bottom: 25px;
+    left: -25px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    background: white;
+    padding: 17px 22px;
+    border-radius: 12px;
+    box-shadow: 0 10px 35px #173e3e20;
+}
+
+.floating-card > span {
+    font-size: 30px;
+    color: #119d86;
+}
+
+.floating-card strong, .floating-card small { display: block; }
+.floating-card small { color: #82918f; margin-top: 5px; }
+
+.hero-stats {
+    display: flex;
+    gap: 30px;
+    margin-top: 45px;
+    flex-wrap: wrap;
+}
+
+.hero-stats strong, .hero-stats small { display: block; }
+.hero-stats strong { font-size: 21px; color: #119d86; }
+.hero-stats small { font-size: 12px; color: #849491; margin-top: 5px; }
+
+.section { padding: 85px 8%; }
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.section-heading h2, .about-content h2, .appointment-info h2 {
+    font-family: 'Manrope', sans-serif;
+    font-size: clamp(28px,4vw,40px);
+    margin: 12px 0;
+    color: #173d3b;
+}
+
+.section-heading p { color: #82918f; }
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 22px;
+}
+
+.service-card {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    border: 1px solid #e9f1ef;
+    transition: .3s;
+}
+
+.service-card:hover, .doctor-card:hover, .type-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 15px 35px #163d3b12;
+}
+
+.service-icon { font-size: 35px; margin-bottom: 18px; }
+.service-card h3 { margin-bottom: 10px; }
+.service-card p { color: #81918e; line-height: 1.7; font-size: 14px; }
+
+.about {
+    background: #eaf6f3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 65px;
+    align-items: center;
+}
+
+.about-image img {
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.about-content p {
+    color: #718481;
+    line-height: 1.8;
+    margin: 18px 0;
+}
+
+.about-content ul { list-style: none; margin: 25px 0; }
+.about-content li { margin: 15px 0; font-weight: 600; }
+
+.types { background: #f7fbfa; }
+
+.types-grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 25px;
+}
+
+.type-card {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    border: 1px solid #eaf0ee;
+    transition: .3s;
+}
+
+.type-card span {
+    color: #119d86;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.type-card h3 { margin: 15px 0; }
+.type-card p { color: #81918e; line-height: 1.7; font-size: 14px; }
+
+.tips { background: #eff8f6; }
+
+.tips-grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 25px;
+}
+
+.tips-grid > div {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+.tips-grid span { font-size: 32px; }
+.tips-grid h3 { margin: 15px 0 10px; }
+.tips-grid p { color: #81918e; line-height: 1.7; font-size: 14px; }
+
+.doctor-grid {
+    display: grid;
+    grid-template-columns: repeat(2,minmax(0,300px));
+    justify-content: center;
+    gap: 30px;
+}
+
+.doctor-card {
+    background: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 16px;
+    transition: .3s;
+    border: 1px solid #eaf0ee;
+}
+
+.doctor-card img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.doctor-card h3 { margin-top: 18px; }
+.doctor-card p { color: #81918e; margin: 8px; font-size: 14px; }
+
+.doctor-card a {
+    display: inline-block;
+    margin: 12px;
+    color: #119d86;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.note {
+    text-align: center;
+    font-size: 12px;
+    color: #81918e;
+    margin-top: 20px;
+}
+
+.appointment {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    background: #eaf6f3;
+    align-items: center;
+}
+
+.appointment-info p {
+    color: #718481;
+    line-height: 1.8;
+    margin: 15px 0 25px;
+}
+
+.contact-line { margin: 17px 0; font-weight: 600; }
+
+#diabetesForm {
+    background: white;
+    padding: 35px;
+    border-radius: 18px;
+    box-shadow: 0 12px 35px #173d3b0d;
+}
+
+#diabetesForm h2 {
+    margin-bottom: 22px;
+    font-family: 'Manrope',sans-serif;
+}
+
+#diabetesForm input,
+#diabetesForm select,
+#diabetesForm textarea {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 14px;
+    border: 1px solid #dce8e5;
+    border-radius: 8px;
+    font: inherit;
+    outline: none;
+}
+
+#diabetesForm input:focus,
+#diabetesForm select:focus,
+#diabetesForm textarea:focus {
+    border-color: #119d86;
+}
+
+#diabetesForm textarea { height: 100px; resize: vertical; }
+#diabetesForm button { width: 100%; font-size: 15px; }
+#formMessage { margin-top: 15px; font-size: 14px; }
+#diabetesForm small { display: block; margin-top: 12px; color: #84918f; line-height: 1.5; }
+
+footer {
+    background: #143b39;
+    color: white;
+    text-align: center;
+    padding: 40px 15px;
+}
+
+footer .logo { color: white; }
+footer p { margin-top: 13px; color: #c3d6d1; font-size: 14px; }
+
+.chat-button {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #119d86;
+    color: white;
+    border: none;
+    font-size: 28px;
+    cursor: pointer;
+    z-index: 1001;
+    box-shadow: 0 5px 20px #119d8650;
+}
+
+.chat-box {
+    display: none;
+    position: fixed;
+    bottom: 100px;
+    right: 25px;
+    width: 340px;
+    height: 430px;
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 10px 40px #0002;
+    overflow: hidden;
+    z-index: 1001;
+}
+
+.chat-header {
+    background: #119d86;
+    color: white;
+    padding: 17px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chat-header small { display: block; margin-top: 5px; opacity: .8; }
+
+.chat-header button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.chat-messages {
+    height: 305px;
+    padding: 15px;
+    overflow-y: auto;
+    background: #f6faf9;
+}
+
+.bot-message, .user-message {
+    padding: 11px 13px;
+    border-radius: 12px;
+    margin-bottom: 12px;
+    max-width: 90%;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.bot-message { background: #e5f4ef; color: #234d46; }
+.user-message { background: #119d86; color: white; margin-left: auto; }
+
+.chat-input { display: flex; padding: 10px; gap: 7px; }
+.chat-input input {
+    flex: 1;
+    min-width: 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 7px;
+}
+
+.chat-input button {
+    background: #119d86;
+    color: white;
+    border: none;
+    padding: 0 14px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+@media(max-width:900px) {
+    .hero, .about, .appointment { grid-template-columns: 1fr; }
+    .service-grid, .types-grid, .tips-grid { grid-template-columns: repeat(2,1fr); }
+}
+
+@media(max-width:650px) {
+    .header { padding: 17px 5%; }
+    .menu-btn { display: block; }
+
+    nav {
+        display: none;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: white;
+        padding: 25px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    nav.active { display: flex; }
+
+    .hero { padding: 55px 6%; gap: 35px; }
+    .hero-image > img { height: 330px; }
+    .floating-card { left: 5px; bottom: 12px; }
+
+    .section { padding: 60px 6%; }
+
+    .service-grid, .types-grid, .tips-grid, .doctor-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about-image img { height: 300px; }
+    .appointment { gap: 30px; }
+    #diabetesForm { padding: 23px; }
+
+    .chat-box {
+        width: calc(100% - 30px);
+        right: 15px;
+    }
+}

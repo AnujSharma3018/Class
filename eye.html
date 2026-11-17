@@ -1,0 +1,424 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MediAura | Eye Care</title>
+
+    <link rel="stylesheet" href="eye.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+
+    <a href="index.html" class="logo">
+        ✚ <span>Medi<span class="green">Aura</span></span>
+    </a>
+
+    <nav id="navMenu">
+        <a href="index.html">Home</a>
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#appointment">Appointment</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <a href="#appointment" class="nav-btn">Book Appointment</a>
+
+    <button class="menu-btn" onclick="toggleMenu()">☰</button>
+
+</header>
+
+<!-- HERO -->
+<section class="hero">
+
+    <div class="hero-content">
+
+        <span class="tag">YOUR VISION, OUR PRIORITY</span>
+
+        <h1>
+            Clear Vision.<br>
+            <span>Better Life.</span>
+        </h1>
+
+        <p>
+            Discover professional eye care information,
+            vision health guidance and consultation support
+            for healthier eyes and better vision.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="#appointment" class="primary-btn">
+                Book Eye Appointment →
+            </a>
+
+            <button class="secondary-btn" onclick="openChat()">
+                🤖 AI Eye Assistant
+            </button>
+
+        </div>
+
+        <div class="hero-stats">
+
+            <div>
+                <strong>6+</strong>
+                <small>Eye Care Services</small>
+            </div>
+
+            <div>
+                <strong>24/7</strong>
+                <small>Online Support</small>
+            </div>
+
+            <div>
+                <strong>100%</strong>
+                <small>Vision Focused</small>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="hero-image">
+
+        <img
+        src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=900"
+        alt="Eye Care Medical Consultation">
+
+        <div class="floating-card">
+            👁️ Healthy Eyes, Happy Life
+            <span>Professional Eye Care</span>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- SERVICES -->
+<section class="services section" id="services">
+
+    <div class="section-heading">
+
+        <span class="tag">OUR EYE CARE SPECIALITIES</span>
+
+        <h2>Complete Eye <span>Care Services</span></h2>
+
+        <p>
+            Explore eye health services and professional
+            vision care consultation.
+        </p>
+
+    </div>
+
+    <div class="service-grid">
+
+        <div class="service-card">
+            <div class="icon">👁️</div>
+            <h3>Eye Examination</h3>
+            <p>Routine eye check-up and vision assessment guidance.</p>
+            <a href="#appointment">Book Service →</a>
+        </div>
+
+        <div class="service-card">
+            <div class="icon">👓</div>
+            <h3>Vision Correction</h3>
+            <p>Consultation about glasses and vision correction options.</p>
+            <a href="#appointment">Book Service →</a>
+        </div>
+
+        <div class="service-card">
+            <div class="icon">🔬</div>
+            <h3>Cataract Care</h3>
+            <p>Information and consultation for cataract treatment.</p>
+            <a href="#appointment">Book Service →</a>
+        </div>
+
+        <div class="service-card">
+            <div class="icon">💧</div>
+            <h3>Dry Eye Treatment</h3>
+            <p>Guidance for dry eyes and eye discomfort.</p>
+            <a href="#appointment">Book Service →</a>
+        </div>
+
+        <div class="service-card">
+            <div class="icon">🧬</div>
+            <h3>Glaucoma Care</h3>
+            <p>Eye pressure screening and glaucoma consultation.</p>
+            <a href="#appointment">Book Service →</a>
+        </div>
+
+        <div class="service-card">
+            <div class="icon">👶</div>
+            <h3>Children's Eye Care</h3>
+            <p>Vision screening and eye health guidance for children.</p>
+            <a href="#appointment">Book Service →</a>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ABOUT -->
+<section class="about section" id="about">
+
+    <div class="about-image">
+
+        <img
+        src="https://images.unsplash.com/photo-1584982751601-97dcc096659c?w=900"
+        alt="Eye Examination">
+
+    </div>
+
+    <div class="about-content">
+
+        <span class="tag">ABOUT EYE CARE</span>
+
+        <h2>Protect Your Vision.<br><span>Protect Your Future.</span></h2>
+
+        <p>
+            MediAura provides accessible eye healthcare
+            information and consultation support to help
+            people understand their vision and eye health needs.
+        </p>
+
+        <div class="about-feature">
+            <span>✓</span>
+            Professional Eye Health Guidance
+        </div>
+
+        <div class="about-feature">
+            <span>✓</span>
+            Vision Examination Information
+        </div>
+
+        <div class="about-feature">
+            <span>✓</span>
+            Convenient Online Appointment Requests
+        </div>
+
+        <a href="#appointment" class="primary-btn">
+            Consult Now →
+        </a>
+
+    </div>
+
+</section>
+
+<!-- EYE HEALTH TIPS -->
+<section class="tips section">
+
+    <div class="section-heading">
+
+        <span class="tag">EYE HEALTH TIPS</span>
+
+        <h2>Take Care Of Your <span>Eyes</span></h2>
+
+        <p>Simple habits that can support healthy vision.</p>
+
+    </div>
+
+    <div class="tips-grid">
+
+        <div class="tip-card">
+            <div>💻</div>
+            <h3>20-20-20 Rule</h3>
+            <p>
+                During prolonged screen use, every 20 minutes
+                look at something about 20 feet away for
+                at least 20 seconds.
+            </p>
+        </div>
+
+        <div class="tip-card">
+            <div>🥗</div>
+            <h3>Healthy Nutrition</h3>
+            <p>
+                Include a balanced diet with vegetables,
+                fruits and nutrients that support eye health.
+            </p>
+        </div>
+
+        <div class="tip-card">
+            <div>🩺</div>
+            <h3>Regular Eye Checkups</h3>
+            <p>
+                Get regular eye examinations as recommended
+                by your eye care professional.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- APPOINTMENT -->
+<section class="appointment section" id="appointment">
+
+    <div class="appointment-info">
+
+        <span class="tag">BOOK YOUR VISIT</span>
+
+        <h2>Your Eyes Deserve <span>Expert Care.</span></h2>
+
+        <p>
+            Request an eye consultation through our
+            online appointment form.
+        </p>
+
+        <div class="info-item">👁️ Eye Health Consultation</div>
+
+        <div class="info-item">📞 Easy Appointment Requests</div>
+
+        <div class="info-item">💬 Patient Support</div>
+
+    </div>
+
+    <form class="appointment-form" id="eyeForm">
+
+        <h3>Eye Care Appointment</h3>
+
+        <label>Full Name</label>
+
+        <input type="text" id="name"
+        placeholder="Enter your name" required>
+
+        <label>Mobile Number</label>
+
+        <input type="tel" id="phone"
+        placeholder="10-digit mobile number"
+        pattern="[0-9]{10}" required>
+
+        <label>Select Eye Service</label>
+
+        <select id="service" required>
+
+            <option value="">Choose Service</option>
+
+            <option>Eye Examination</option>
+            <option>Vision Correction</option>
+            <option>Cataract Care</option>
+            <option>Dry Eye Treatment</option>
+            <option>Glaucoma Care</option>
+            <option>Children's Eye Care</option>
+            <option>General Eye Consultation</option>
+
+        </select>
+
+        <label>Appointment Date</label>
+
+        <input type="date" id="date" required>
+
+        <label>Describe Your Eye Concern</label>
+
+        <textarea id="concern"
+        placeholder="Describe your concern..."
+        required></textarea>
+
+        <button type="submit" class="primary-btn">
+            Request Appointment →
+        </button>
+
+        <p id="formMessage"></p>
+
+    </form>
+
+</section>
+
+<!-- AI EYE CHATBOT -->
+<button class="chat-button" onclick="toggleChat()">🤖</button>
+
+<div class="chat-box" id="chatBox">
+
+    <div class="chat-header">
+
+        <div>
+            <strong>👁️ MediAura Eye AI</strong>
+            <small>Eye Health Information Assistant</small>
+        </div>
+
+        <button onclick="toggleChat()">✕</button>
+
+    </div>
+
+    <div class="chat-messages" id="chatMessages">
+
+        <div class="bot-message">
+
+            Hello! 👋 Welcome to MediAura Eye Care.
+
+            <br><br>
+
+            Ask me about eye pain, dry eyes, vision,
+            cataracts and general eye health.
+
+        </div>
+
+    </div>
+
+    <div class="chat-input">
+
+        <input type="text" id="userInput"
+        placeholder="Ask your eye health question..."
+        onkeydown="handleEnter(event)">
+
+        <button onclick="sendMessage()">➤</button>
+
+    </div>
+
+    <div class="chat-note">
+        AI provides general information, not a medical diagnosis.
+    </div>
+
+</div>
+
+<!-- CONTACT -->
+<section class="contact section" id="contact">
+
+    <div class="section-heading">
+
+        <span class="tag">CONTACT US</span>
+
+        <h2>We Care About <span>Your Vision.</span></h2>
+
+        <p>Connect with MediAura for eye care consultation support.</p>
+
+    </div>
+
+    <a href="https://wa.me/91XXXXXXXXXX"
+       class="whatsapp-btn" target="_blank">
+
+        💬 WhatsApp Us
+
+    </a>
+
+    <p>Email: support@mediaura.com</p>
+
+</section>
+
+<!-- FOOTER -->
+<footer>
+
+    <h2>✚ MediAura</h2>
+
+    <p>Health • Care • Better Tomorrow</p>
+
+    <p>© 2026 MediAura. All Rights Reserved.</p>
+
+    <small>
+        For sudden vision loss or serious eye injury,
+        seek emergency medical care immediately.
+    </small>
+
+</footer>
+
+<script src="eye.js"></script>
+
+</body>
+</html>

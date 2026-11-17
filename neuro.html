@@ -1,0 +1,127 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NeuroCare - Neurology Healthcare</title>
+    <link rel="stylesheet" href="neuro.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">🧠 NeuroCare</div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#appointment">Appointment</a>
+    </nav>
+</header>
+
+<section class="hero" id="home">
+    <div class="hero-content">
+        <h1>Expert <span>Neurology</span> Healthcare</h1>
+        <p>
+            Brain and nervous system healthcare consultations.
+            Get professional healthcare support for neurological conditions.
+        </p>
+        <a href="#appointment" class="btn">Book Consultation</a>
+    </div>
+
+    <img src="https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=800"
+         alt="Neurology Healthcare">
+</section>
+
+<section id="services">
+    <h2>Our Neurology Services</h2>
+
+    <div class="services">
+
+        <div class="card">
+            <div class="icon">🧠</div>
+            <h3>Brain Disorders</h3>
+            <p>Brain-related healthcare consultations.</p>
+        </div>
+
+        <div class="card">
+            <div class="icon">⚡</div>
+            <h3>Migraine & Headache</h3>
+            <p>Healthcare information for headaches and migraine.</p>
+        </div>
+
+        <div class="card">
+            <div class="icon">💙</div>
+            <h3>Epilepsy Care</h3>
+            <p>Neurological consultation and support.</p>
+        </div>
+
+        <div class="card">
+            <div class="icon">🩺</div>
+            <h3>Nerve Disorders</h3>
+            <p>Consultation for nerve-related conditions.</p>
+        </div>
+
+    </div>
+</section>
+
+<section id="appointment" class="appointment">
+    <h2>Book Your Appointment</h2>
+
+    <form id="appointmentForm">
+        <input type="text" placeholder="Full Name" required>
+        <input type="email" placeholder="Email Address" required>
+        <input type="tel" placeholder="Phone Number" required>
+
+        <select required>
+            <option value="">Select Service</option>
+            <option>Migraine</option>
+            <option>Brain Disorders</option>
+            <option>Epilepsy</option>
+            <option>Nerve Disorders</option>
+        </select>
+
+        <input type="date" required>
+
+        <button type="submit" class="btn">Submit Appointment</button>
+    </form>
+</section>
+
+<footer>
+    <p>© 2026 NeuroCare | All Rights Reserved</p>
+</footer>
+
+<!-- AI CHATBOT -->
+
+<button class="chat-button" id="chatToggle">💬</button>
+
+<div class="chat-box" id="chatBox">
+
+    <div class="chat-header">
+        <div>
+            <h3>🧠 NeuroCare AI</h3>
+            <small>Healthcare Assistant</small>
+        </div>
+        <button id="closeChat">×</button>
+    </div>
+
+    <div class="chat-messages" id="messages">
+        <div class="message bot">
+            Hello! Welcome to NeuroCare.
+            How can I help you today?
+        </div>
+    </div>
+
+    <div class="chat-input">
+        <input type="text" id="userInput"
+               placeholder="Ask your question...">
+
+        <button id="sendBtn">Send</button>
+    </div>
+
+</div>
+
+<script src="neuro.js"></script>
+
+</body>
+</html>
